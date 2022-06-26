@@ -3,47 +3,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.1rem;
     font-family: 'Philosopher', sans-serif;
 }
 
 
-/*----- Barre de navigation ----- */
 
-nav
+/* -------------------------- Téléphone mobile -------------------------- */
+
+@media screen and (max-width : 500px) 
 {
-    width: 100%;
-    background-color: rgb(55, 81, 126);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* padding: .5rem; */
-    background-color: rgb(55, 81, 126);
-}
+    /*----- Barre de navigation ----- */
+    nav
+    {
+        width: 100%;
+        background-color: rgb(55, 81, 126);
+        /* padding: .5rem; */
+    }
 
-nav *
-{
-    font-size: 1.3rem;
-}
+    nav a, nav label
+    {
+        padding: 1rem;
+    }
 
-nav a, nav label, .nav-list
-{
-    padding: 1rem;
-}
+    nav .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* padding: .5rem; */
+        background-color: rgb(55, 81, 126);
+        
+    }
 
-nav a, label
-{
-    color: white;
-    text-decoration: none;
-}
+    nav a, label
+    {
+        color: white;
+        text-decoration: none;
+    }
 
-nav input[type=checkbox]
-{
-    display: none;
-}
-
-
-    nav .nav-list
+    nav .nav-list, nav input[type=checkbox]
     {
         display: none;
     }
@@ -53,7 +53,9 @@ nav input[type=checkbox]
         position: absolute;
         display: flex;
         flex-direction: column;
-        margin-top:110px;
+        /* justify-content: center;
+        align-items: center; */
+        margin-top:150px;
         background-color: white;
         width: 100%;
         list-style-type: none;
@@ -127,15 +129,6 @@ nav input[type=checkbox]
     }
 
 
-    @media screen and (min-width: 500px) 
-    {
-        body
-        {
-            height: 300vh;
-            background: red;
-        }
-    }
 
 
-
-
+}
