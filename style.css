@@ -6,30 +6,29 @@
     font-family: 'Philosopher', sans-serif;
 }
 
-/* ------------------------------General--------------------------------------- */
 
 /*----- Barre de navigation ----- */
+
 nav
 {
     width: 100%;
     background-color: rgb(55, 81, 126);
-    /* padding: .5rem; */
-}
-
-nav a, nav label
-{
-    padding: 1rem;
-}
-
-nav .container
-{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     /* padding: .5rem; */
     background-color: rgb(55, 81, 126);
-    
+}
+
+nav *
+{
+    font-size: 1.3rem;
+}
+
+nav a, nav label, .nav-list
+{
+    padding: 1rem;
 }
 
 nav a, label
@@ -44,15 +43,6 @@ nav input[type=checkbox]
 }
 
 
-
-
-
-
-/* -------------------------- Téléphone mobile -------------------------- */
-
-@media screen and (max-width : 500px) 
-{
-    
     nav .nav-list
     {
         display: none;
@@ -63,8 +53,6 @@ nav input[type=checkbox]
         position: absolute;
         display: flex;
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
         margin-top:110px;
         background-color: white;
         width: 100%;
@@ -139,6 +127,15 @@ nav input[type=checkbox]
     }
 
 
+    @media screen and (min-width: 500px) 
+    {
+        body
+        {
+            height: 300vh;
+            background: red;
+        }
+    }
 
 
-}
+
+
