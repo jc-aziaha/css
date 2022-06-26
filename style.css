@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1.3rem;
+    font-family: 'Philosopher', sans-serif;
 }
+
+
 
 /* -------------------------- Téléphone mobile -------------------------- */
 
@@ -20,7 +23,7 @@
 
     nav a, nav label
     {
-        padding: .5rem;
+        padding: 1rem;
     }
 
     nav .container
@@ -52,7 +55,7 @@
         /* justify-content: center;
         align-items: center; */
         position: absolute;
-        margin-top: 14rem;
+        margin-top: 305px;
         background-color: white;
         width: 100%;
         list-style-type: none;
@@ -94,7 +97,7 @@
 
     #welcome-section .img-div
     {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 
     #welcome-section > div img
@@ -106,7 +109,7 @@
 
     #welcome-section .text-div
     {
-        margin-top: 3rem;
+        margin-top: 1rem;
         text-align: center;
         color: white;
         display: flex;
